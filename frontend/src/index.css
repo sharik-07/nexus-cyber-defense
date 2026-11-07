@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #05080d;
+  background-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(34, 211, 238, 0.08), transparent),
+    radial-gradient(900px 500px at -10% 110%, rgba(57, 255, 136, 0.07), transparent),
+    linear-gradient(rgba(19, 48, 58, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 48, 58, 0.25) 1px, transparent 1px);
+  background-size: auto, auto, 32px 32px, 32px 32px;
+  background-attachment: fixed;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-edge bg-panel/80 backdrop-blur;
+    box-shadow: 0 0 0 1px rgba(57, 255, 136, 0.05), 0 0 24px rgba(34, 211, 238, 0.06);
+  }
+  .panel:hover { border-color: rgba(57, 255, 136, 0.35); }
+  .input {
+    @apply rounded-md border border-edge bg-void px-2 py-1.5 text-sm text-slate-200 focus:border-neon focus:outline-none;
+  }
+  .btn {
+    @apply inline-flex items-center gap-1.5 rounded-md border border-neon/40 bg-neon/10 px-3 py-1.5 text-sm text-neon hover:bg-neon/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-neon disabled:opacity-40;
+  }
+}
+
+.no-anim *, .no-anim *::before, .no-anim *::after { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff !important; }
+}
