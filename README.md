@@ -1,5 +1,7 @@
 # NEXUS CYBER DEFENSE
 
+[![tests](https://github.com/sharik-07/nexus-cyber-defense/actions/workflows/tests.yml/badge.svg)](https://github.com/sharik-07/nexus-cyber-defense/actions)
+
 A read-only, SOC-style monitoring dashboard for your own Windows PC.
 It shows live CPU, memory, disk and network data, raises alerts when
 something looks wrong, and keeps an event log you can search and export.
