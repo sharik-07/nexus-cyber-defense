@@ -11,6 +11,16 @@ Stack: Python (Flask, psutil) backend and a React (Vite, Tailwind, Recharts) fro
 > Status: v1.1.0, early but working. Built and tested on Windows 11 Pro.
 > The backend tests also run on Linux. The frontend has no automated tests yet.
 
+## Screenshots
+
+![overview](docs/screenshots/overview.png)
+
+![alerts](docs/screenshots/alerts.png)
+
+![terminal](docs/screenshots/terminal.png)
+
+![reports](docs/screenshots/reports.png)
+
 ## What it does
 
 - Overview: CPU, memory, disk, uptime and network speed with live charts
@@ -35,6 +45,16 @@ There are also threshold alerts when CPU, memory or disk use reaches 90 percent.
 
 These are simple heuristics. This is NOT an antivirus and it can raise false alarms
 (for example installers that run from a temp folder). Review an alert before acting on it.
+
+## Screenshots
+
+![overview](docs/screenshots/overview.png)
+
+![alerts](docs/screenshots/alerts.png)
+
+![terminal](docs/screenshots/terminal.png)
+
+![reports](docs/screenshots/reports.png)
 
 ## What it does not do
 
